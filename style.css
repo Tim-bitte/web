@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 15px;
+    --black: #000;
+    --white: #fff;
+    --min-padding: 5px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #72727c 0%, #ff7fe7 100%);
+}
+.blue{
+    color: rgb(124, 124, 253);
+}
+.inner__elems{
+    height: 100vh;
+}
+.inner__elems h1 a{
+    text-decoration: none;
+}
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
