@@ -251,7 +251,7 @@ background: linear-gradient(90.54deg, #60A9F6 0%, #2A8BF2 100%);
     font-size: 21px;
     padding-top: 1rem;
     min-height: 60px;
-    resize: none;        /* disable manual resize */
+    resize: none;        
 }
 .message__panel .icons{
     display: flex;
@@ -263,4 +263,77 @@ background: linear-gradient(90.54deg, #60A9F6 0%, #2A8BF2 100%);
     border: none;
     background: none;
     
+}
+#preview__bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0 6px 0;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 6px;
+}
+
+.preview__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.preview__img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.preview__file__icon {
+    color: #2a8bf2;
+    font-size: 28px;
+}
+
+.preview__file__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.preview__file__name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.preview__file__size {
+    font-size: 11px;
+    color: gray;
+}
+.preview__close {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background: #555;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview__close:hover {
+    background: #e00;
 }
