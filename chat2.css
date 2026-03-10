@@ -230,7 +230,11 @@ background: linear-gradient(90.54deg, #60A9F6 0%, #2A8BF2 100%);
     
     border-radius: 50%;
 }
-
+.icon__circle span a{
+    text-decoration: none;
+    color: #000;
+}
+    
 .message__panel{
     position: fixed;
     width: 85%;
